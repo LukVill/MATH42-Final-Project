@@ -2,10 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import os
+import sys
 
-url = "C:/Users/lavil/source/repos/MATH42 Final Project/NOAA_one.csv"
-outUrl = "C:/Users/lavil/source/repos/MATH42 Final Project/dailyRain.csv"
-dailyRainUrl = "C:/Users/lavil/source/repos/MATH42 Final Project/dailyRain.csv"
+url = os.path.realpath(os.path.join(os.getcwd(),"NOAA_one.csv"))
+outUrl = os.path.realpath(os.path.join(os.getcwd(),"dailyRain.csv"))
+dailyRainUrl = os.path.realpath(os.path.join(os.getcwd(),"dailyRain.csv"))
+
 
 data = pd.read_csv(url)
 
