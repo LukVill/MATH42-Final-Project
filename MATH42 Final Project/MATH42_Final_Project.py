@@ -7,24 +7,13 @@ import sys
 
 url = os.path.realpath(os.path.join(os.getcwd(),"NOAA_one.csv"))
 outUrl = os.path.realpath(os.path.join(os.getcwd(),"dailyRain.csv"))
-dailyRainUrl = os.path.realpath(os.path.join(os.getcwd(),"dailyRain.csv"))
+dailyRainUrl = os.path.realpath(os.path.abspath(os.path.join(os.getcwd(),os.pardir,"dailyRain.csv")))
 
 
-data = pd.read_csv(url)
-
-#df holding date and hourly precipitation
-dtNrain = data[["DATE","DailyPrecipitation"]]
-
-dailyRain = dtNrain.dropna()
-
-print(dailyRain)
-
-print(dailyRain.iloc[0,0])
-"""
+df = pd.read_csv(dailyRainUrl)
 ##get rid of s in daily precipitation
-for x in range(len(dailyRain.columns)):
-    if dailyRain.iloc[x,1]
-"""
+print(len(df))
+
 """
 ## PLOTTING
 rain = pd.read_csv(dailyRainUrl)
