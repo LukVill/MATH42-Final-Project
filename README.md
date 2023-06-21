@@ -1,4 +1,5 @@
 # Welcome to my MATH42 Final Project!
+![](https://blog.humanesociety.org/wp-content/uploads/2020/01/wolf-iStock-97652273_480740-1.jpg)
 ## My group's purpose for this project was to create a realistic simulation of Yellowstone's wolf and elk population by utilizing complex differential equations and matrices for stochastic population growth.
 
 ### Later in the report, you will see that this project has no conclusive graphical results, but we derived many scenarios of the pattern of population growth using differential equations based on different phenomena such as Allee's Effect.
